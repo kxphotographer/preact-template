@@ -1,6 +1,8 @@
 # What I did
 
-## Initializing preact project
+<details>
+
+<summary>Initializing preact project</summary>
 
 ```
 $ yarn create preact
@@ -45,3 +47,5 @@ success Installed "create-preact@0.2.1" with binaries:
 ✨  Done in 40.15s.
 
 ```
+
+</details>
