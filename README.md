@@ -49,3 +49,13 @@ success Installed "create-preact@0.2.1" with binaries:
 ```
 
 </details>
+
+<details>
+
+<summary>Setup to use import alias</summary>
+
+* Add `vite-tsconfig-paths` and use it on `vite.config.ts`
+* Add config to `paths` on `tsconfig.json`
+* Eliminate relative imports which goes through parent directories
+
+</details>
