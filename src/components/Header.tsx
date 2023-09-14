@@ -1,4 +1,4 @@
-import { FunctionComponent, isValidElement } from "preact"
+import { FunctionComponent } from "preact"
 import { useLocation } from "preact-iso"
 import { classes } from "@/src/utils/classes"
 
@@ -27,8 +27,6 @@ const NavLink: FunctionComponent<NavLinkProps> = ({ href, children }) => {
 }
 
 export const Header = () => {
-	const { url } = useLocation()
-
 	return (
 		<header class="flex justify-end bg-violet-800">
 			<nav class="flex">
