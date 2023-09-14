@@ -1,0 +1,15 @@
+# Integration with Issue Tracker
+#
+# (note that '\' need to be escaped).
+
+[issuetracker "GitHub Issue"]
+  regex = "(?<!\\w)#(\\d+)"
+  url = "https://github.com/kxphotographer/preact-template/issues/$1"
+
+[issuetracker "GitHub Issue (other repo)"]
+  regex = "([\\w\\-]+)/([\\w\\-]+)#(\\d+)"
+  url = "https://github.com/$1/$2/issues/$3"
+
+[issuetracker "GitHub Commit"]
+  regex = "([0-9A-Fa-f]{7,})"
+  url = "https://github.com/kxphotographer/preact-template/commit/$1"
