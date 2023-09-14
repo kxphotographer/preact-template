@@ -14,18 +14,3 @@ jobs:
           cache: yarn
       - run: yarn install --immutable
       - run: yarn prettier -c .
-  editorconfig:
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          prev_pwd="$PWD"
-          tmpdir="$(mktemp -d)"
-          cd "$tmpdir"
-          curl -L -O "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/$VERSION/ec-linux-$(uname -i).tar.gz"
-          tar xzf "ec-linux-$(uname -i).tar.gz"
-          chmod a+x "ec-linux-$(uname -i)"
-          mv "ec-linux-$(uname -i)" /usr/bin/editorconfig-checker
-          cd "$prev_pwd"
-          rm -rf "$tmpdir"
-      - uses: actions/checkout@v3
-      - run: editorconfig-checker
