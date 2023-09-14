@@ -8,6 +8,7 @@
 		"checkJs": true,
 		"jsx": "react-jsx",
 		"jsxImportSource": "preact",
+		"strict": true,
 		"paths": {
 			"@/*": ["./*"]
 		}

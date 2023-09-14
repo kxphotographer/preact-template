@@ -4,13 +4,13 @@ import { LocationProvider, Router, Route } from 'preact-iso';
 import { Header } from './components/Header.jsx';
 import { Home } from './pages/Home/index.jsx';
 import { NotFound } from './pages/_404.jsx';
-import './style.css';
+import './index.css';
 
-export function App() {
+export const App = () => {
 	return (
 		<LocationProvider>
 			<Header />
-			<main>
+			<main class="flex-auto flex items-center max-w-[1280px] m-8 text-center md:mx-0 md:my-auto">
 				<Router>
 					<Route path="/" component={Home} />
 					<Route default component={NotFound} />
@@ -20,4 +20,4 @@ export function App() {
 	);
 }
 
-render(<App />, document.getElementById('app'));
+render(<App />, document.getElementById('app')!);
