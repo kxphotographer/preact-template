@@ -1,13 +1,13 @@
-import { FunctionComponent } from "preact"
-import { useLocation } from "preact-iso"
-import { classes } from "@/src/utils/classes"
+import { FunctionComponent } from "preact";
+import { useLocation } from "preact-iso";
+import { classes } from "@/src/utils/classes";
 
 type NavLinkProps = {
-	href: string
-}
+	href: string;
+};
 const NavLink: FunctionComponent<NavLinkProps> = ({ href, children }) => {
-	const { url } = useLocation()
-	const isActive = url === href
+	const { url } = useLocation();
+	const isActive = url === href;
 
 	return (
 		<a
@@ -23,8 +23,8 @@ const NavLink: FunctionComponent<NavLinkProps> = ({ href, children }) => {
 		>
 			{children}
 		</a>
-	)
-}
+	);
+};
 
 export const Header = () => {
 	return (
@@ -34,5 +34,5 @@ export const Header = () => {
 				<NavLink href="/404">404</NavLink>
 			</nav>
 		</header>
-	)
-}
+	);
+};

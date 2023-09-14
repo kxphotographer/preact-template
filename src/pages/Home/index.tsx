@@ -1,10 +1,10 @@
-import preactLogo from "@/src/assets/preact.svg"
+import preactLogo from "@/src/assets/preact.svg";
 
 type ResourceProps = {
-	href: string
-	title: string
-	description: string
-}
+	href: string;
+	title: string;
+	description: string;
+};
 const Resource = (props: ResourceProps) => {
 	return (
 		<a
@@ -16,8 +16,8 @@ const Resource = (props: ResourceProps) => {
 			<h2>{props.title}</h2>
 			<p>{props.description}</p>
 		</a>
-	)
-}
+	);
+};
 
 export const Home = () => {
 	return (
@@ -50,5 +50,5 @@ export const Home = () => {
 				/>
 			</section>
 		</div>
-	)
-}
+	);
+};

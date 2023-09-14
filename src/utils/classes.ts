@@ -1,4 +1,4 @@
-type Falsy = false | 0 | "" | null | undefined
+type Falsy = false | 0 | "" | null | undefined;
 
 /**
  * Utility for building value for class attribute where some of classes are conditional.
@@ -16,4 +16,4 @@ type Falsy = false | 0 | "" | null | undefined
  * @returns String containing class names joined with spaces
  */
 export const classes = (...classNames: (string | Falsy)[]): string =>
-	classNames.filter((item) => item).join(" ")
+	classNames.filter((item) => item).join(" ");
