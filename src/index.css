@@ -25,11 +25,11 @@
 }
 
 @layer utilities {
-  .preact-log-hover {
-    filter: drop-shadow(0 0 2em #673ab8aa);
-  }
+	.preact-log-hover {
+		filter: drop-shadow(0 0 2em #673ab8aa);
+	}
 
-  .resource-shadow-hover {
-    box-shadow: 0 25px 50px -12px #673ab888;
-  }
+	.resource-shadow-hover {
+		box-shadow: 0 25px 50px -12px #673ab888;
+	}
 }
