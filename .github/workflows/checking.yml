@@ -19,7 +19,7 @@ jobs:
     steps:
       - run: |
           prev_pwd="$PWD"
-          tmpdir="$(tempfile -d)"
+          tmpdir="$(mktemp -d)"
           cd "$tmpdir"
           curl -L -O "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/$VERSION/ec-linux-$(uname -i).tar.gz"
           tar xzf "ec-linux-$(uname -i).tar.gz"
