@@ -11,22 +11,32 @@
 
 ## Manual setup after initializing Preact project
 
-- Added Tailwind CSS
-- Configured import aliases on `tsconfig.json`
-  - To eliminate parent-traversing relative import
-  - Make Vite respect the config using `vite-tsconfig-paths`
-- Enabled strict mode on `tsconfig.json`
-  - To opt in strict options which are currently available and will be available in the future
-- Set up linters
-  - ESLint for code structure
-    - i.e. hook dependencies, using `eslint-plugin-react-hooks` which `eslint-config-preact` includes
-  - Prettier for code format
-    - Once I wondered if I set `semi` `false` to require trailing semicolons, but they cannot be omitted in some cases (i.e. [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) after another function definition). So I finally decided to require them.
-  - Run them on Github Actions when pushed
+### Added Tailwind CSS
+- To simplify style management of each components
+- Add utility function to get along with conditional classes
+
+### Configured import aliases on `tsconfig.json`
+- To eliminate parent-traversing relative import
+- Make Vite respect the config with the help of `vite-tsconfig-paths`
+
+### Enabled strict mode on `tsconfig.json`
+- To opt in strict options which are currently available and will be available in the future
+
+### Set up linters
+- ESLint for code structure
+- i.e. hook dependencies, with the help of `eslint-plugin-react-hooks` which `eslint-config-preact` includes
+- To prevent bugs and improve performance of component
+- Prettier for code format
+- Once I wondered if I set `semi` `false` to require trailing semicolons, but they cannot be omitted in some cases (i.e. [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) after another function definition). So I finally decided to require them.
+- Run them on Github Actions when pushed
 
 ## Future plan
 
-- Linting import statements (order, vertical whitespaces between groups)
+- Linting import statements
+  - Order
+  - Vertical whitespaces between groups
+  - Always require `type` keyword for type imports
+  - Forbid parent-traversing import
 - Unit tesging by Jest
 
 ## Command line memo
