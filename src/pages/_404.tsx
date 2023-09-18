@@ -5,4 +5,4 @@ export const NotFound = () => {
 			<p>It's gone :(</p>
 		</section>
 	);
-}
+};

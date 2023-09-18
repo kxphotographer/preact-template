@@ -1,0 +1,7 @@
+{
+	"recommendations": [
+		"github.vscode-github-actions",
+		"bradlc.vscode-tailwindcss",
+		"editorconfig.editorconfig"
+	]
+}
