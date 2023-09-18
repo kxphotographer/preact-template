@@ -12,17 +12,21 @@
 ## Manual setup after initializing Preact project
 
 ### Added Tailwind CSS
+
 - To simplify style management of each components
 - Add utility function to get along with conditional classes
 
 ### Configured import aliases on `tsconfig.json`
+
 - To eliminate parent-traversing relative import
 - Make Vite respect the config with the help of `vite-tsconfig-paths`
 
 ### Enabled strict mode on `tsconfig.json`
+
 - To opt in strict options which are currently available and will be available in the future
 
 ### Set up linters
+
 - ESLint for code structure
 - i.e. hook dependencies, with the help of `eslint-plugin-react-hooks` which `eslint-config-preact` includes
 - To prevent bugs and improve performance of component
