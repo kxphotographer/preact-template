@@ -32,6 +32,7 @@
 
 ## Future plan
 
+- Checking that files are following `.editorconfig` rules on CI
 - Linting import statements
   - Order
   - Vertical whitespaces between groups
